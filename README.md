@@ -1,2 +1,2 @@
-# GlobalCoin
+# EyePayCash Web
 
