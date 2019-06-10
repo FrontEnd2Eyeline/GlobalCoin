@@ -268,7 +268,6 @@ $(".navbar-toggler").click(function(){
 
 
 
-
 })(jQuery);
 // Se fetchea la API para ser consumida
 fetch('https://api.coindesk.com/v1/bpi/currentprice.json')

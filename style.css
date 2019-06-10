@@ -128,14 +128,15 @@ button:focus {
 }
 
 .us-bg{
-    background: url(./img/us-bg.png);
+    background-image: url(../img/us-bg.png);
     background-size: auto;
     background-attachment: fixed !important;
-    mix-blend-mode: soft-light;
     background-repeat: no-repeat !important;
     height: 950px;
     grid-area: 1/1/6/2
 }
+
+
 
 .us > h1 {
     grid-area: 2/3/2/3;
