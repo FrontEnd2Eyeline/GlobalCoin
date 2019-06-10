@@ -2,6 +2,9 @@
 
 
 @media only screen and (min-width: 320px) {
+    .operamos{
+        font-size: 9.6vw;
+    }
     .footer {
         background: #042360;
         display: grid;
@@ -47,6 +50,7 @@
     .credits {
         grid-area: 11/1/11/4;
         justify-self: center;
+        font-size: 1.7vw;
     }
     .nav-menu{
         display: none;
@@ -84,7 +88,11 @@
         font-family: 'Poppins', sans-serif;
     }
     .us > h1 {
-        font-size: 17.7vw;
+        grid-area: 2/3/2/3;
+        color: white;
+        z-index: 102;
+        font-size: 4.7vw;
+        font-family: 'Poppins', sans-serif;
     }
     .us-bg {
         grid-area: 1/1/6/5;
@@ -246,6 +254,9 @@
 }
 
 @media only screen and (min-width: 480px) {
+    .operamos {
+        font-size: 9.6vw;
+    }
     hr {
         margin-top: -12.2%;
         height: 0.07em;
@@ -307,16 +318,22 @@
     }
 
     .tamaLogosFooter {
-        width: 100%;
+        width: 70%;
         text-align: center;
         display: block;
         margin: auto;
     }
 }
-
+@media only screen and (min-width: 576px) {
+    .operamos {
+        font-size: 4.6vw;
+    }
+}
 @media only screen and (min-width: 640px) {
-
-
+    .operamos {
+        font-size: 4.6vw;
+        margin-left: -6%;
+    }
     hr {
         margin-top: -9%;
         height: 0.1em;
@@ -385,12 +402,26 @@
 }
 
 @media only screen and (min-width: 768px) {
+    .operamos{
+        font-size: 3.6vw;
+    }
+    
+    .us > a {
+    margin: 0% 47.3% auto auto;
+    padding: 4% 13%;
+    font-size: 1.4vw;
+    color: white !important;
+    background-color: #4E5E87;
+    border-radius: 0.4em;
+    opacity: 0.7;
+    grid-area: 4/3/5/4;
+}
     
 .footer {
     background: #042360;
     display: grid;
     grid-template-rows: 13% 13% auto auto 7% 7% 50%;
-    grid-template-columns: auto auto auto 5% auto auto auto;
+    grid-template-columns: 10% auto auto 5% auto auto 10%;
     height: 500px;
 }
 
@@ -481,9 +512,9 @@
 }
 
 .credits {
-    font-size: 1.2em;
+    font-size: 1.4vw;
     color: #DADAE2;
-    grid-area: 7/1/8/8;
+    grid-area: 7/2/8/7;
     justify-self: center;
     align-self: center;
 }
@@ -504,7 +535,7 @@
         grid-area: 2/3/2/3;
         color: white;
         z-index: 102;
-        font-size: 7.7vw;
+        font-size: 4.7vw;
         font-family: 'Poppins', sans-serif;
     }
     .us-bg {
@@ -518,10 +549,10 @@
         grid-template-rows: 0.4fr 0.1fr 0.3fr 1.4fr 0.6fr;
         grid-template-columns: 1fr 5.8fr 1fr;
     }
-
     .value > p {
         font-size: 2.5vw;
         margin-left: 10%;
+        margin-top: 10%;
     }
     .us > p {
         font-size: 2.5vw;
@@ -663,6 +694,26 @@
 }
 
 @media only screen and (min-width: 1024px) {
+    .operamos{
+        font-size: 3.6vw;
+    }
+    .credits {
+        font-size: 1vw;
+        color: #DADAE2;
+        grid-area: 7/2/8/7;
+        justify-self: center;
+        align-self: center;
+    }
+    .us > a {
+        margin: 0% 52% auto auto;
+        padding: 4% 13%;
+        font-size: 1.4vw;
+        color: white !important;
+        background-color: #4E5E87;
+        border-radius: 0.4em;
+        opacity: 0.7;
+        grid-area: 4/3/5/4;
+    }
     .padtopNeg {
         padding-top: 4em;
         padding-bottom: 0em;
@@ -722,7 +773,7 @@
     grid-area: 2/3/2/3;
     color: white;
     z-index: 102;
-    font-size: 7em;
+    font-size: 6em;
     font-weight: 500;
     font-family: 'Poppins', sans-serif;
 }
@@ -738,7 +789,7 @@
     font-size: 1.2vw;
 }
 .us > a {
-    margin: 0% 46% auto auto;
+    margin: 0% 43% auto auto;
     padding: 3% 10%;
     font-size: 1vw;
     color: white !important;
