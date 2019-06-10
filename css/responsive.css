@@ -306,8 +306,8 @@
         margin-left: 0em;
     }
 
-    .tamaLogosFooter{
-        width: 12em;
+    .tamaLogosFooter {
+        width: 100%;
         text-align: center;
         display: block;
         margin: auto;
@@ -377,7 +377,7 @@
     }
 
     .tamaLogosFooter{
-        width: 12em;
+        width: 100%;
         text-align: center;
         display: block;
         margin: auto;
@@ -462,6 +462,9 @@
     display: flex;
     color: white !important;
     grid-area: 4/5/4/7;
+    margin-left: 30%;
+    margin-top: 0%;
+    margin-right: 30%;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -652,7 +655,7 @@
     }
 
     .tamaLogosFooter{
-        width: 12em;
+        width: 100%;
         text-align: center;
         display: block;
         margin: auto;
@@ -660,6 +663,18 @@
 }
 
 @media only screen and (min-width: 1024px) {
+    .padtopNeg {
+        padding-top: 4em;
+        padding-bottom: 0em;
+    }
+    .py-4em2 {
+        padding-top: 14em;
+        margin-bottom: 14em;
+    }
+    .py-4em0 {
+        padding-top: 0em;
+        margin-bottom: 4em;
+    }
     .nav-menu-show{
         display: none !important;
         background-color: #4E5E87;
@@ -696,10 +711,10 @@
 
 .us-bg{
     background: url(../img/us-bg.png);
-    background-size: cover;
+    background-size: auto;
     background-attachment: fixed !important;
     background-repeat: no-repeat !important;
-    height: 950px;
+    height: auto;
     grid-area: 1/1/6/2
 }
 
@@ -707,7 +722,8 @@
     grid-area: 2/3/2/3;
     color: white;
     z-index: 102;
-    font-size: 6em;
+    font-size: 7em;
+    font-weight: 500;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -722,9 +738,9 @@
     font-size: 1.2vw;
 }
 .us > a {
-    margin: 0% 52% auto auto;
-    padding: 4% 13%;
-    font-size: 1.3vw;
+    margin: 0% 46% auto auto;
+    padding: 3% 10%;
+    font-size: 1vw;
     color: white !important;
     background-color: #4E5E87;
     border-radius: 0.4em;
@@ -736,6 +752,7 @@
     grid-area: 1/2/6/5;
     background: linear-gradient(505deg, #041F60 35%, #4E5E87 103%) !important;
     display: grid;
+    margin-left: -0.1em;
 }
 
 .value > h6 {
@@ -743,7 +760,7 @@
     font-size: 1em;
     font-family: 'Poppins', sans-serif;
     grid-area: 2/2/2/2;
-    margin-left: 2em;
+    margin-left: 4em;
 }
 
 .value > h1 {
@@ -758,7 +775,7 @@
     color: #DADAE2;
     font-size: 1.2vw;
     grid-area: 4/2/4/2;
-    margin-left: 4em;
+    margin-left: 3em;
 }
 
     .BTC {
@@ -790,7 +807,7 @@
     .ingresar_area {
         margin-top: 0%;
         margin-left: -279.3%;
-        margin-right: 8.9%;
+        margin-right: 9.6%;
         height: 100%;
         top: 0;
         z-index: 1;
@@ -803,7 +820,7 @@
         margin-top: 0%;
         height: 100%;
         top: 0;
-        margin-left: 7.4%;
+        margin-left: 7.7%;
         margin-right: -20%;
         clip-path: none;
         transform: skewX(-16.27deg);
@@ -866,7 +883,7 @@
         background-size: cover;
         display: grid;
         grid-template-rows: 1.2fr 0.5fr 1.3fr;
-        grid-template-columns: 1.3fr 0.7fr 2fr 0.4fr 0.7fr 1.7fr 1.6fr;
+        grid-template-columns: 1.3fr 0.7fr 2fr auto 0.7fr 1.7fr 1.6fr;
     }
     .logo {
         background-color: red;
@@ -932,7 +949,7 @@
     }
 
     .tamaLogosFooter{
-        width: 12em;
+        width: 22em;
         text-align: center;
         display: block;
         margin: auto;
@@ -994,7 +1011,7 @@
     }
 
     .tamaLogosFooter{
-        width: 12em;
+        width: 100%;
         text-align: center;
         display: block;
         margin: auto;
@@ -1060,7 +1077,7 @@
     }
 
     .tamaLogosFooter{
-        width: 12em;
+        width: 22em;
         text-align: center;
         display: block;
         margin: auto;
@@ -1080,8 +1097,8 @@
     .us > p {
         font-size: 1.3vw;
     }
-    .padtopNeg{
-        padding-top: 1em;
+    .padtopNeg {
+        padding-top: 4em;
         padding-bottom: 0em;
     }
 
@@ -1121,8 +1138,8 @@
         margin-left: 0em;
     }
 
-    .tamaLogosFooter{
-        width: 12em;
+    .tamaLogosFooter {
+        width: 29em;
         text-align: center;
         display: block;
         margin: auto;

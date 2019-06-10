@@ -137,7 +137,6 @@ button:focus {
 }
 
 
-
 .us > h1 {
     grid-area: 2/3/2/3;
     color: white;
@@ -792,14 +791,15 @@ p {
 
 .title-receive {
     color: #042360;
-    font-size: 36px;
+    font-size: 4em;
     margin-top: 1em;
-    font-weight: normal;
-    font-family: 'Open Sans Bold', sans-serif;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
 }
 
-.widtBtnCrearCuenta{
-    width: 14em;
+.widtBtnCrearCuenta {
+    width: 20em;
+    height: 14em;
 }
 
 .pb-3h{
@@ -2150,9 +2150,10 @@ hr {
     margin-bottom: 0em;
 }
 
-.icoMen2{
+.icoMen2 {
     text-align: center;
     width: 10em;
+    height: 10em;
     margin: auto;
     display: block;
 }
@@ -2176,8 +2177,9 @@ hr {
     margin: auto;
 }
 
-.padb1{
-    padding-bottom: 1em;
+.padb1 {
+    padding-bottom: 6em;
+    padding-top: 4em;
 }
 
 .padtopNeg{
@@ -2198,7 +2200,7 @@ hr {
     background: -webkit-linear-gradient(top, rgba(45,60,99,1) 0%, rgba(26,41,79,1) 37%, rgba(26,41,79,1) 71%, rgba(26,41,79,1) 100%);
     background: -o-linear-gradient(top, rgba(45,60,99,1) 0%, rgba(26,41,79,1) 37%, rgba(26,41,79,1) 71%, rgba(26,41,79,1) 100%);
     background: -ms-linear-gradient(top, rgba(45,60,99,1) 0%, rgba(26,41,79,1) 37%, rgba(26,41,79,1) 71%, rgba(26,41,79,1) 100%);
-    background: linear-gradient(to bottom, rgba(45,60,99,1) 0%, rgba(26,41,79,1) 37%, rgba(26,41,79,1) 71%, rgba(26,41,79,1) 100%);
+    background: linear-gradient(to bottom, #4E5E87 -481%, #042360 170%);
 }
 
 .footer {

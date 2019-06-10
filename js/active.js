@@ -276,6 +276,6 @@ fetch('https://api.coindesk.com/v1/bpi/currentprice.json')
 // Se crea la data para que se vea en 
 .then(data => {    
     let BTCUSD = document.getElementById('BTC')
-    BTCUSD.innerHTML = `BTC:$${Math.round(data.bpi.USD.rate_float)}`;
+    BTCUSD.innerHTML = `BTC: $${Math.round(data.bpi.USD.rate_float)}`;
 })
 .catch(err => console.log(err))
