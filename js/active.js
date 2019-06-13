@@ -161,67 +161,40 @@ $("#start").click(function() {
 });
 
 // Animacion de rotacion al hacer hover en ingresar, area oscura de ingresar, logo interno y externo
-$(".ingresar, .ingresar_area").hover( function(){
+$(".ingresar_area, .ingresar, .logo1interno, .logo1externo").hover(function(){
     $(".logo1externo").css("animation", "rotating 3s linear infinite");
     $(".logo1interno").css("animation", "rotating_inv 3s linear infinite");
-    }, function(){
+    $(".ingresar_area").css({"background": "rgba(0, 0, 0, 0.5)", "z-index": "-2"})}, 
+    function(){  
+    $(".ingresar_area").css({"background": "transparent", "z-index": "-2"});
     $(".logo1externo").css("animation", "static");
     $(".logo1interno").css("animation", "static");
-});
-
-$(".logo1externo").hover( function(){
-    $(".logo1externo").css("animation", "rotating 3s linear infinite");
-    $(".logo1interno").css("animation", "rotating_inv 3s linear infinite");
-    }, function(){
-    $(".logo1externo").css("animation", "static");
-    $(".logo1interno").css("animation", "static");
-});
-
-$(".logo1interno").hover( function(){
-    $(".logo1externo").css("animation", "rotating 3s linear infinite");
-    $(".logo1interno").css("animation", "rotating_inv 3s linear infinite");
-    }, function(){
-    $(".logo1externo").css("animation", "static");
-    $(".logo1interno").css("animation", "static");
-});
+  });
 
 // Animacion de rotacion al hacer hover en registrar, area oscura de registrar, logo interno y externo
-
-$(".registrar_area, .registrar").hover( function(){
+$(".registrar_area, .registrar , .logo2interno, .logo2externo").hover(function(){
+    $(".registrar_area").css({"background": "rgba(0, 0, 0, 0.5)", "z-index": "-2"})
     $(".logo2externo").css("animation", "rotating 3s linear infinite");
     $(".logo2interno").css("animation", "rotating_inv 3s linear infinite");
-    }, function(){
+    },function(){  
+    $(".registrar_area").css({"background": "transparent", "z-index": "-2"});
     $(".logo2externo").css("animation", "static");
-    $(".logo2interno").css("animation", "static");
-});
+    $(".logo2interno").css("animation", "static");  
+  });
 
-
-$(".logo2externo").hover( function(){
-    $(".logo2externo").css("animation", "rotating 3s linear infinite");
-    $(".logo2interno").css("animation", "rotating_inv 3s linear infinite");
-    }, function(){
-    $(".logo2externo").css("animation", "static");
-    $(".logo2interno").css("animation", "static");
-});
-
-$(".logo2interno").hover( function(){
-    $(".logo2externo").css("animation", "rotating 3s linear infinite");
-    $(".logo2interno").css("animation", "rotating_inv 3s linear infinite");
-    }, function(){
-    $(".logo2externo").css("animation", "static");
-    $(".logo2interno").css("animation", "static");
-});
-
+  // Toggler del navbar funciona al dar click
 $(".navbar-toggler").click(function(){
     $(".link").toggleClass("link-show");
 });
 
 $(".navbar-toggler").click(function(){
-    $(".link").css("animation", "fadeInRight 1s linear");
+    $(".link").css("animation", "fadeInRight 0.5s linear");
 });
 
 // Cambia el color del navbar dependiendo de la ubicacion en la que se encuentre 
 
+// Si el scroll en la parte de arriba de la ventana contiene servicios entonces
+// cambia el color del navbar
 $(window).scroll(function(){
     if  ($(this).scrollTop()>=$('#services').position().top ){
         $(".link-show").addClass("blue-navbar");
@@ -238,8 +211,11 @@ $(window).scroll(function(){
     }
 });
 
+
+// Si el scroll en la parte de arriba de la ventana contiene el carrusel entonces
+// cambia el color del navbar
 $(window).scroll(function(){
-    if ($(this).scrollTop()>=$('#verification').position().top) {
+    if ($(this).scrollTop()>=$('#verification').position().top){
         $(".link-show").removeClass("blue-navbar");
         $("hr").removeClass("hr-blue");
         $(".explorar").removeClass("blue-navbar");
@@ -248,7 +224,8 @@ $(window).scroll(function(){
     } 
 });
 
-
+// Si el scroll en la parte de arriba de la ventana contiene el carrusel entonces
+// cambia el color del navbar
 $(window).scroll(function(){
     if ($(this).scrollTop()>=$('#recibir').position().top) {
         $(".link-show").addClass("blue-navbar");
@@ -260,6 +237,11 @@ $(window).scroll(function(){
 });
 
 
+$(window).scroll(function(){
+    if ($(this).scrollTop()>=$('#home').position().top) {
+    } 
+});
+
 
 // A partir de 991px empieza a aparecer un menu responsivo
 $(".navbar-toggler").click(function(){
@@ -267,8 +249,147 @@ $(".navbar-toggler").click(function(){
 })
 
 
+//Inicializa en Verificacion
+$('.txtVerificacio').show();
+$('.txtNegocio').hide();
+$('.txtDeposito').hide();
+$('#style-8').show();
+$('#style-9').hide();
+$('#style-10').hide();
 
-})(jQuery);
+
+if ($("#V").hasClass("activo")) {
+    $("#right").click(function(){
+        //Deposito
+        $('#style-8').hide();
+        $('#style-9').show();
+        $('#style-10').hide();
+        $('.txtVerificacio').hide();
+        $('.txtNegocio').hide();
+        $('.txtDeposito').show();
+        $('#E').removeClass('activo');
+        $('#V').removeClass('activo');
+        $('#D').addClass('activo');
+    });
+    $("#left").click(function(){
+        //Negocio
+        $('#style-8').hide();
+        $('#style-9').hide();
+        $('#style-10').show();
+        $('.txtVerificacio').hide();
+        $('.txtNegocio').show();
+        $('.txtDeposito').hide();
+        $('#D').removeClass('activo');
+        $('#V').removeClass('activo');
+        $('#N').addClass('activo');
+    });   
+}
+
+
+$.fn.check = function checking() {
+    return this.each(function(){
+        //MODO VERIFICACION
+        if ($("#V").hasClass("activo")) {
+            $("#right").click(function(){
+                //Deposito
+                $('#style-8').hide();
+                $('#style-9').show();
+                $('#style-10').hide();
+                $('.txtVerificacio').hide();
+                $('.txtNegocio').hide();
+                $('.txtDeposito').show();
+                $('#E').removeClass('activo');
+                $('#V').removeClass('activo');
+                $('#D').addClass('activo');
+            });
+            $("#left").click(function(){
+                //Negocio
+                $('#style-8').hide();
+                $('#style-9').hide();
+                $('#style-10').show();
+                $('.txtVerificacio').hide();
+                $('.txtNegocio').show();
+                $('.txtDeposito').hide();
+                $('#D').removeClass('activo');
+                $('#V').removeClass('activo');
+                $('#N').addClass('activo');
+            });
+            //MODO NEGOCIO
+        } else if ($("#N").hasClass("activo")){
+            $("#right").click(function(){
+                //Verificacion
+                $('.txtVerificacio').show();
+                $('.txtNegocio').hide();
+                $('.txtDeposito').hide();
+                $('#style-8').show();
+                $('#style-9').hide();
+                $('#style-10').hide();
+                $('#D').removeClass('activo');
+                $('#N').removeClass('activo');
+                $('#V').addClass('activo');
+            });
+            $("#left").click(function(){
+                //Deposito
+                $('#style-8').hide();
+                $('#style-9').show();
+                $('#style-10').hide();
+                $('.txtVerificacio').hide();
+                $('.txtNegocio').hide();
+                $('.txtDeposito').show();
+                $('#V').removeClass('activo');
+                $('#N').removeClass('activo');
+                $('#D').addClass('activo');
+            });
+            //MODO DEPOSITO
+        }else if ($("#D").hasClass("activo")) {
+            $("#left").click(function(){
+                //Verificacion
+                $('.txtVerificacio').show();
+                $('.txtNegocio').hide();
+                $('.txtDeposito').hide();
+                $('#style-8').show();
+                $('#style-9').hide();
+                $('#style-10').hide();
+                $('#D').removeClass('activo');
+                $('#N').removeClass('activo');
+                $('#V').addClass('activo');
+            });
+            $("#right").click(function(){
+                //Negocio
+                $('#style-8').hide();
+                $('#style-9').hide();
+                $('#style-10').show();
+                $('.txtVerificacio').hide();
+                $('.txtNegocio').show();
+                $('.txtDeposito').hide();
+                $('#N').addClass('activo');
+                $('#V').removeClass('activo');
+                $('#D').removeClass('activo');
+            });
+        }
+    })
+}
+
+
+$(window).scroll(function(){
+    if  ($('#header').offset().top > 100){
+        alert('Hola')
+        // setTimeout( function(){
+        //         $('html').css("overflow-y", "hidden");
+        //     },0)
+        // setTimeout( function(){
+        //         $('html').css("overflow-y", "scroll");
+        //     },1000)
+    } else {
+        
+    }
+});
+
+
+// setTimeout( function(){
+//     $('html').css("overflow-y", "scroll");
+// },100)
+
 // Se fetchea la API para ser consumida
 fetch('https://api.coindesk.com/v1/bpi/currentprice.json')
 //Se crea una promesa cuyo resultado sera el JSON del API
@@ -279,3 +400,5 @@ fetch('https://api.coindesk.com/v1/bpi/currentprice.json')
     BTCUSD.innerHTML = `BTC: $${Math.round(data.bpi.USD.rate_float)}`;
 })
 .catch(err => console.log(err))
+
+})(jQuery);

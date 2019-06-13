@@ -1,7 +1,9 @@
-
-
-
 @media only screen and (min-width: 320px) {
+    .carousel-inner {
+        margin-top: 0%;
+        margin-bottom: 20%;
+    }
+    
     .operamos{
         font-size: 9.6vw;
     }
@@ -131,8 +133,12 @@
     .logo2externo{
         grid-area: 4/4/4/4;
     }
+    .logo1interno {
+        width: 70%;
+    }
     .logo2interno{
         grid-area: 4/4/4/4;
+        width: 70%;
     }
     .registrar {
         grid-area: 4/5/5/5;
@@ -179,7 +185,7 @@
     .home {
         position: relative;
         background-image: url('../img/main-bg-1024.png') !important;
-        height: auto;
+        height: 100vh;
         width: 100%;
         z-index: 1;
         background-position: bottom center;
@@ -232,11 +238,11 @@
 
     .icoMen {
         text-align: center;
-        width: 10em;
+        width: 60%;
         margin: auto;
         display: block;
-        margin-top: 6em;
-        margin-bottom: 6em;
+        margin-top: 20%;
+        margin-bottom: 0em;
     }
 
     .txtVerificacio{
@@ -252,7 +258,6 @@
         margin: auto;
     }
 }
-
 @media only screen and (min-width: 480px) {
     .operamos {
         font-size: 9.6vw;
@@ -301,16 +306,6 @@
         width: 6px;
         overflow-y: scroll;
     }
-
-    .icoMen {
-        text-align: center;
-        width: 10em;
-        margin: auto;
-        display: block;
-        margin-top: 6em;
-        margin-bottom: 6em;
-    }
-
     .txtVerificacio{
         text-align: left;
         color: white;
@@ -330,6 +325,10 @@
     }
 }
 @media only screen and (min-width: 640px) {
+.carousel-inner {
+    margin-top: 30%;
+    margin-bottom: 20%;
+}
     .operamos {
         font-size: 4.6vw;
         margin-left: -6%;
@@ -377,16 +376,6 @@
         width: 6px;
         overflow-y: scroll;
     }
-
-    .icoMen {
-        text-align: center;
-        width: 10em;
-        margin: auto;
-        display: block;
-        margin-top: 6em;
-        margin-bottom: 6em;
-    }
-
     .txtVerificacio{
         text-align: left;
         color: white;
@@ -400,8 +389,11 @@
         margin: auto;
     }
 }
-
 @media only screen and (min-width: 768px) {
+    .carousel-inner {
+        margin-top: 0%;
+        margin-bottom: 20%;
+    }
     .operamos{
         font-size: 3.6vw;
     }
@@ -573,8 +565,12 @@
     .logo2externo{
         grid-area: 4/4/4/4;
     }
+    .logo1interno {
+        width: 70%;
+    }
     .logo2interno{
         grid-area: 4/4/4/4;
+        width: 70%;
     }
     .registrar {
         grid-area: 4/5/5/5;
@@ -625,7 +621,7 @@
     .home {
         position: relative;
         background-image: url('../img/main-bg-1024.png') !important;
-        height: auto;
+        height: 100vh;
         width: 100%;
         z-index: 1;
         background-position: bottom center;
@@ -670,15 +666,6 @@
         overflow-y: scroll;
     }
 
-    .icoMen {
-        text-align: center;
-        width: 10em;
-        margin: auto;
-        display: block;
-        margin-top: 6em;
-        margin-bottom: 6em;
-    }
-
     .txtVerificacio{
         text-align: left;
         color: white;
@@ -692,10 +679,13 @@
         margin: auto;
     }
 }
-
 @media only screen and (min-width: 1024px) {
+    .carousel-inner{
+        margin-top: 0%
+    }
+    
     .operamos{
-        font-size: 3.6vw;
+        font-size: 2.6vw;
     }
     .credits {
         font-size: 1vw;
@@ -832,15 +822,15 @@
     .BTC {
         color: white;
         font-size: 1.5vw;
-        margin: 150% 0%;
-        grid-area: 3/4/5/5;
+        margin: 0% 0%;
+        grid-area: 4/4/5/5;
     }
     .hrBTC {
-        grid-area: 3/4/5/5;
-        margin: 183% 10%;
+        grid-area: 4/4/5/5;
+        margin: 30% 0% 0% 0%;
         width: 80%;
         height: 0.5em;
-        background: linear-gradient(505deg, transparent 35%, white 103%)
+        background: linear-gradient(505deg, transparent 35%, white 103%);
     }
     .registrar {
         color: white;
@@ -858,7 +848,7 @@
     .ingresar_area {
         margin-top: 0%;
         margin-left: -279.3%;
-        margin-right: 9.6%;
+        margin-right: 9.2%;
         height: 100%;
         top: 0;
         z-index: 1;
@@ -871,7 +861,7 @@
         margin-top: 0%;
         height: 100%;
         top: 0;
-        margin-left: 7.7%;
+        margin-left: 7.5%;
         margin-right: -20%;
         clip-path: none;
         transform: skewX(-16.27deg);
@@ -898,6 +888,14 @@
     .logo2interno {
         z-index: 101;
         grid-area: 2/5/3/6;
+        width: 73%;
+        justify-self: center;
+        align-self: center;
+    }
+    .logo1interno {
+        z-index: 101;
+        grid-area: 2/2/3/3;
+        width: 73%;
         justify-self: center;
         align-self: center;
     }
@@ -926,14 +924,14 @@
 
     .home {
         background-image: url(../img/main-bg.png) !important;
-        height: auto;
+        height: 100vh;
         width: 100%;
         position: relative;
         z-index: 1;
         background-position: bottom center;
         background-size: cover;
         display: grid;
-        grid-template-rows: 1.2fr 0.5fr 1.3fr;
+        grid-template-rows: 1.2fr 0.5fr 10% 10% 5%;
         grid-template-columns: 1.3fr 0.7fr 2fr auto 0.7fr 1.7fr 1.6fr;
     }
     .logo {
@@ -984,15 +982,6 @@
         overflow-y: scroll;
     }
 
-    .icoMen {
-        text-align: center;
-        width: 10em;
-        margin: auto;
-        display: block;
-        margin-top: 6em;
-        margin-bottom: 6em;
-    }
-
     .txtVerificacio{
         text-align: left;
         color: white;
@@ -1006,7 +995,6 @@
         margin: auto;
     }
 }
-
 @media only screen and (min-width: 1280px) {
     .value > h6{
         font-size: 1.2em;
@@ -1046,15 +1034,6 @@
         overflow-y: scroll;
     }
 
-    .icoMen {
-        text-align: center;
-        width: 16em;
-        margin: auto;
-        display: block;
-        margin-top: 12em;
-        margin-bottom: 6em;
-    }
-
     .txtVerificacio{
         text-align: left;
         color: white;
@@ -1068,7 +1047,6 @@
         margin: auto;
     }
 }
-
 @media only screen and (min-width: 1366px) {
     hr {
         width: 83%;
@@ -1112,13 +1090,13 @@
         overflow-y: scroll;
     }
 
-    .icoMen {
+    .icoMen{
         text-align: center;
-        width: 16em;
+        width: 60%;
         margin: auto;
         display: block;
-        margin-top: 12em;
-        margin-bottom: 6em;
+        margin-top: 20%;
+        margin-bottom: 0em;
     }
 
     .txtVerificacio{
@@ -1134,7 +1112,6 @@
         margin: auto;
     }
 }
-
 @media only screen and (min-width: 1600px) {
     .value > h6{
         font-size: 1.2em;
@@ -1171,16 +1148,8 @@
         margin-left: 0px;
         margin-top: 40px;
         width: 6px;
-        overflow-y: scroll;
-    }
-
-    .icoMen {
-        text-align: center;
-        width: 16em;
-        margin: auto;
-        display: block;
-        margin-top: 12em;
-        margin-bottom: 6em;
+        overflow-y: auto;
+         max-height: 20em;
     }
 
     .txtVerificacio{
@@ -1196,7 +1165,6 @@
         margin: auto;
     }
 }
-
 @media only screen and (min-width: 1920px) {
 
     .padtopNeg {
@@ -1223,15 +1191,6 @@
         margin-top: 40px;
         width: 6px;
         overflow-y: scroll;
-    }
-
-    .icoMen {
-        text-align: center;
-        width: 20em;
-        margin: auto;
-        display: block;
-        margin-top: 14em;
-        margin-bottom: 0em;
     }
 
     .txtVerificacio {
