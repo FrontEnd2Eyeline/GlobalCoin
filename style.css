@@ -11,7 +11,11 @@
 :: 1.0 Base CSS Start
 -------------------------- */
 
-
+.socialChild{
+    margin-top: 10%;
+    font-size: 20px;
+    color: white;
+}
 
 .nav-menu-show{
     display: block !important;
@@ -661,7 +665,7 @@ p {
     height: 100%;
     position: fixed;
     display: grid;
-    grid-template: auto 10% 5% auto / auto 5% 5% 5% auto;
+    grid-template: auto 25vh 6% auto / auto 5% 30vh 5% auto;
     width: 100%;
     z-index: 999999;
 }
@@ -674,8 +678,8 @@ p {
     align-self: center;
 }
 .logoloaderinterno {
-    animation : rotating_inv 3s linear infinite;
-    width: 70%;
+    animation: rotating_inv 3s linear infinite;
+    width: 60%;
     z-index: 101;
     grid-area: 2/3/3/3;
     justify-self: center;
@@ -685,33 +689,7 @@ p {
     color: white;
     grid-area: 3/3/3/3;
     justify-content: center;
-}
-
-.colorlib-load {
-    animation: 2000ms linear 0s normal none infinite running colorlib-load;
-    background: transparent none repeat scroll 0 0;
-    border-color: #dddddd #dddddd #fb397d;
-    border-radius: 50%;
-    border-style: solid;
-    border-width: 2px;
-    height: 40px;
-    left: calc(50% - 20px);
-    position: relative;
-    top: calc(50% - 20px);
-    width: 40px;
-    z-index: 9;
-}
-
-
-@keyframes colorlib-load {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
+    font-size: 6vh;
 }
 
 .ml-200{
@@ -1431,8 +1409,8 @@ hr {
 }
 
 .padb1 {
-    padding-bottom: 6em;
-    padding-top: 4em;
+    padding-bottom: 0em;
+    padding-top: 0em;
 }
 
 .padtopNeg{
