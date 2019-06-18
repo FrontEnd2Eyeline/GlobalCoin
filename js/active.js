@@ -102,11 +102,13 @@ $(".ingresar_area, .ingresar, .logo1interno, .logo1externo").hover(function(){
   });
 
 // Animacion de rotacion al hacer hover en registrar, area oscura de registrar, logo interno y externo
-$(".registrar_area, .registrar , .logo2interno, .logo2externo").hover(function(){
+$(".registrar_area, .registrar , .logo2interno, .logo2externo, .registrar_area2").hover(function(){
     $(".registrar_area").css({"background": "rgba(0, 0, 0, 0.5)", "z-index": "-2"})
+    $(".registrar_area2").css({"background": "rgba(0, 0, 0, 0.5)", "z-index": "-2"})
     $(".logo2externo").css("animation", "rotating 3s linear infinite");
     $(".logo2interno").css("animation", "rotating_inv 3s linear infinite");
-    },function(){  
+    },function(){
+    $(".registrar_area").css({"background": "transparent", "z-index": "-2"});
     $(".registrar_area").css({"background": "transparent", "z-index": "-2"});
     $(".logo2externo").css("animation", "static");
     $(".logo2interno").css("animation", "static");  

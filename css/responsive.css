@@ -1,4 +1,16 @@
 @media only screen and (min-width: 320px) {
+    .value {
+        background: url(../img/bg-value-1024.png);
+        height: 950px;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+        background-size: cover;
+        background-attachment: fixed !important;
+        margin-left: 0%;
+        display: grid;
+        grid-template-rows: 0.4fr 0.1fr 0.3fr 1.4fr 0.6fr;
+        grid-template-columns: 1fr 1.8fr 1fr;
+    }
     .padtopNeg{
         padding-top: 0em;
         padding-bottom: 0em;
@@ -132,39 +144,39 @@
 
     .hrBTC {
         grid-area: 6/4/6/4;
-        margin: 124% 0% 0% -40%;
-        width: 100%;
+        margin: 10vh -21vh 0% -2.3vh;
+        width: 20vw;
     }
     .BTC {
         grid-area: 6/3/6/6;
         justify-self: center;
-        margin: 12% 28% 12% 12%;
-        font-size: 3.3vw;
+        margin: 4vh 10vw 0vw 0vw;
+        font-size: 3.3vh;
     }
-
     .logo2externo{
         grid-area: 4/4/4/4;
     }
     .logo1interno {
-        width: 53%;
+        width: 5.4vh;
     }
     .logo2interno{
         grid-area: 4/4/4/4;
-        width: 52%;
+        width: 5.4vh;
     }
     .registrar {
         grid-area: 4/5/5/5;
-        font-size: 6vw;
+        font-size: 4.3vw;
+        margin-left: -4.4vh;
     }
     
     .ingresar {
         margin-left: 45%;
-        font-size: 6vw;
+        font-size: 4.3vw;
     }
     .ingresar_area {
-        margin-top: -7.6vh;
+        margin-top: -11.1vh;
         margin-left: 0%;
-        margin-right:  0%;
+        margin-right: 0%;
         margin-bottom: 0%;
         height: 100%;
         z-index: 1;
@@ -174,10 +186,10 @@
         grid-area: 1/1/4/7;
     }
     .registrar_area {
-        margin: -4.9vh 0% 0% 0%;
+        margin: -8.5vh 0% 0% 0%;
         height: 172%;
         z-index: 1;
-        clip-path: polygon(0% -0.2%, 100% 0%, 100% 100%, 0 64%);
+        clip-path: polygon(0vh 0vh, 100vh 0vh, 100vh 366.4vh, 0vh 42vh);
         transform: skewX(0deg);
         transform: skewY(-13.4deg);
         background: transparent;
@@ -185,7 +197,8 @@
         grid-area: 4/1/7/7;
     }
     .registrar_area:hover {
-        width: 100%;
+        width: 100vw;
+        height: 73vh;
         z-index: -2;
         background: rgba(0, 0, 0, 0.5);
         transition: 0.5s;
@@ -196,15 +209,15 @@
     }
     .home {
         position: relative;
-        background-image: url('../img/main-bg-1024.png') !important;
+        background-image: url(../img/main-bg-1024.png) !important;
         height: 100vh;
-        width: 100%;
+        width: 100vw;
         z-index: 1;
         background-position: bottom center;
         background-size: cover;
         display: grid;
-        grid-template-rows: 20vh 6vh 26vh 6vh 26vh 16vh;
-        grid-template-columns: 13vw 10vw 30vw 10vw 30vw 13vw;
+        grid-template-rows: 20vh 10vh 26vh 10vh 18vh 16vh;
+        grid-template-columns: auto 8vh 20vw 8vh 30vw auto;
     }
     .logo {
         background: url(../img/logo.svg);
@@ -514,37 +527,39 @@
     .us > p {
         font-size: 2.5vw;
     }
-
     .hrBTC {
         grid-area: 6/4/6/4;
-        margin: 124% 0% 0% -40%;
-        width: 100%;
+        margin: 10vw 0% 0% -14vw;
+        width: 17vw;
     }
     .BTC {
         grid-area: 6/3/6/6;
         justify-self: center;
-        margin: 12% 28% 12% 12%;
+        margin: 4% 14% 0% 0%;
         font-size: 3.3vw;
     }
-
+    .logo1externo{
+        width: 10.5vh;
+    }
     .logo2externo{
         grid-area: 4/4/4/4;
+        width: 10.5vh;
     }
     .logo1interno {
-        width: 35.1%;
+        width: 7.6vh;
     }
     .logo2interno {
         grid-area: 4/4/4/4;
-        width: 35.1%;
+        width: 7.6vh;
     }
     .registrar {
         grid-area: 4/5/5/5;
-        font-size: 6vw;
+        font-size: 5vw;
+        margin-left: -22%;
     }
-
     .ingresar {
         margin-left: 45%;
-        font-size: 6vw;
+        font-size: 5vw;
     }
     .ingresar_area {
         margin-top: -18.1vh;
@@ -559,21 +574,14 @@
         grid-area: 1/1/4/7;
     }
     .registrar_area {
-        margin: -4.6vh 0% 0% 0%;
+        margin: -10.6vh 0% 0% 0%;
         height: 172%;
         z-index: 1;
-        clip-path: polygon(0% -0.2%, 100% 0%, 100% 78.6%, 0 56.8%);
-        transform: skewX(0deg);
+        clip-path: polygon(0% 0%, 145vh 0vh, 142vh 75.2vh, 0 41.5vh);
         transform: skewY(-13.4deg);
         background: transparent;
         transition: 1s;
         grid-area: 4/1/7/7;
-    }
-    .registrar_area:hover {
-        width: 100%;
-        z-index: -2;
-        background: rgba(0, 0, 0, 0.5);
-        transition: 0.5s;
     }
 
     hr {
@@ -587,13 +595,13 @@
         position: relative;
         background-image: url(../img/main-bg-1024.png) !important;
         height: 100vh;
-        width: 100%;
+        width: 100vw;
         z-index: 1;
         background-position: bottom center;
         background-size: cover;
         display: grid;
-        grid-template-rows: 20vh 6vh 26vh 6vh 26vh 16vh;
-        grid-template-columns: 0.6fr 0.5fr 1.3fr 0.5fr 1.3fr 0.6fr;
+        grid-template-rows: 20vh 12vh 26vh 12vh 7vh 23vh;
+        grid-template-columns: auto 12vw 40vw 12vw 30vw  auto;
     }
     .logo {
         background: url(../img/logo.svg);
@@ -644,9 +652,24 @@
         margin: auto;
     }
 }
+@media only screen and (min-width: 800px) {
+    .registrar_area {
+        clip-path: polygon(0% 0%, 145vh 0vh, 129vh 71.6vh, 0 40.7vh);
+    }
+}
 @media only screen and (min-width: 991px) {
     .operamos {
         font-size: 3.6vw;
+    }
+    .registrar_area {
+        margin: -10.6vh 0% 0% 0%;
+        height: 172%;
+        z-index: 1;
+        clip-path: polygon(0% 0%, 145vh 0vh, 140vh 72vh, 0 38vh);
+        transform: skewY(-13.4deg);
+        background: transparent;
+        transition: 1s;
+        grid-area: 4/1/7/7;
     }
 }
 @media only screen and (min-width: 1024px) {
@@ -861,6 +884,19 @@
     border-radius: 0.4em;
     opacity: 0.7;
     grid-area: 4/3/5/4;
+    box-shadow: 3px 10px 12px -1px rgba(0,0,0,0.75);
+}
+
+.us > a:hover {
+    margin: 0% 43% auto auto;
+    padding: 3% 10%;
+    font-size: 1vw;
+    color: white !important;
+    background-color: #4E5E87;
+    border-radius: 0.4em;
+    opacity: 0.7;
+    grid-area: 4/3/5/4;
+    box-shadow: 3px 10px 12px -1px, transparent;
 }
 
 .nosotros {
@@ -931,14 +967,15 @@
         grid-area: 1/1/6/4;
     }
     .registrar_area {
-        margin: 0vh -12vw 0vh 4.5vw;
+        margin: 0vh -12vw 0vh 4.3vw;
         height: 100vh;
         clip-path: none;
         transform: skewX(-16.27deg);
         grid-area: 1/4/10/10;
     }
     .registrar_area:hover {
-        width: 120vw;
+        width: 100vw;
+        height: 100vh;
         z-index: -2;
         background: rgba(0, 0, 0, 0.5);
         transition: 0.5s;
@@ -959,14 +996,16 @@
     .logo2interno {
         z-index: 101;
         grid-area: 2/5/3/6;
-        width: 73%;
+        width: 6vw;
+        height: 12vh;
         justify-self: center;
         align-self: center;
     }
     .logo1interno {
         z-index: 101;
         grid-area: 2/2/3/3;
-        width: 73%;
+        width: 6vw;
+        height: 12vh;
         justify-self: center;
         align-self: center;
     }
@@ -975,6 +1014,12 @@
         grid-area: 2/5/3/6;
         justify-self: center;
         align-self: center;
+        width: 100vw;
+        height: 100vh;
+    }
+    .logo1externo {
+        width: 100vw;
+        height: 100vh;
     }
     hr {
         height: 0.05rem;
@@ -1190,117 +1235,6 @@
         margin: auto;
     }
 }
-@media only screen and (min-width :1500px){
-    .ingresar_area {
-        margin-top: 0vh;
-        margin-left: -281.3vw;
-        margin-right: -3.2vw;
-        height: 100vh;
-        z-index: 1;
-        transform: skewX(-16.27deg);
-        background: transparent;
-        transition: 1s;
-        grid-area: 1/1/6/4;
-    }
-    .registrar_area {
-        margin: 0vh -12vw 0vh 4.2vw;
-        height: 100vh;
-        clip-path: none;
-        transform: skewX(-16.27deg);
-        grid-area: 1/4/10/10;
-    }
-    .registrar_area:hover {
-        width: 120vw;
-        z-index: -2;
-        background: rgba(0, 0, 0, 0.5);
-        transition: 0.5s;
-    }
-} 
-
-@media only screen and (min-width: 1600px) {
-    .ingresar_area {
-        margin-right: -2.8vw;
-    }
-    .registrar_area {
-        margin: 0vh -12vw 0vh 3.9vw;
-    }
-    .operamos {
-    font-size: 2vw;
-    }
-    .value > h6{
-        font-size: 1.2em;
-    }
-    .value > h1{
-        font-size: 3.4em;
-    }
-    .value > p {
-        font-size: 1.6vw;
-    }
-    .us > p {
-        font-size: 1.3vw;
-    }
-    .padtopNeg {
-        padding-top: 4em;
-        padding-bottom: 0em;
-    }
-
-    .padtopNeg2{
-        padding-top: -2em;
-        padding-bottom: 6em;
-    }
-
-    .mar10{
-        margin: 6em;
-        padding-top: 2em;
-        padding-bottom: 2em;
-    }
-
-    .scrollbar {
-        float: left;
-        height: 289px;
-        margin-bottom: 25px;
-        margin-left: 0px;
-        margin-top: 40px;
-        width: 6px;
-        overflow-y: auto;
-         max-height: 20em;
-    }
-
-    .txtVerificacio{
-        text-align: left;
-        color: white;
-        margin-left: 0em;
-    }
-
-    .tamaLogosFooter {
-        width: 29em;
-        text-align: center;
-        display: block;
-        margin: auto;
-    }
-}
-
-
-@media only screen and (min-width: 1700px) {
-    .ingresar_area {
-        margin-right: -2.8vw;
-    }
-    .registrar_area {
-        margin: 0vh -12vw 0vh 3.7vw;
-    }
-    
-}
-
-@media only screen and (min-width: 1800px) {
-    .ingresar_area {
-        margin-right: -2.8vw;
-    }
-    .registrar_area {
-        margin: 0vh -12vw 0vh 3.7vw;
-    }
-    
-}
-
 @media only screen and (min-width: 1920px) {
     /* .home {
         grid-template-columns: 1.3fr 0.7fr 2fr auto 0.84fr 1.7fr 1.6fr;
